@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: flipkart-signup
+spec:
+  containers:
+    - name: signup
+      image: nginx
+      ports:
+        - containerPort: 80
+      

@@ -1,0 +1,14 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: bosch
+  labels:
+    department: developer
+    batch: sigma
+spec:
+  containers:
+    - name: demo
+      image: ubuntu
+      command: ["/bin/bash", "-c", "while true; do echo bosch; done"]
+  restartPolicy: Never
+      
